@@ -1,0 +1,11 @@
+﻿@page "/"
+@inject EPTools.Web.Blazor.Services.DiscordWebhookService dsw
+
+<button @onclick="@(async () => await Post())">Post</button>
+
+@code{
+    private async Task Post()
+    {
+        await dsw.SendWebhook();
+    }
+}
