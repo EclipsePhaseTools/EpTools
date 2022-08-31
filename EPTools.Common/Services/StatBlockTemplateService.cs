@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EPTools.Web.Blazor.Services
+namespace EPTools.Common.Services
 {
     public class StatBlockTemplateService
     {

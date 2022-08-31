@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EPTools.Web.Blazor.Services
+namespace EPTools.Common.Services
 {
     public class DiscordWebhookService
     {

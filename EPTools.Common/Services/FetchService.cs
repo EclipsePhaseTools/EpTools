@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
 
-namespace EPTools.Web.Blazor.Services
+namespace EPTools.Common.Services
 {
     public class FetchService
     {

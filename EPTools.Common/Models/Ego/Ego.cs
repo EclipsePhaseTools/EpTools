@@ -35,6 +35,7 @@ namespace EPTools.Common.Models.Ego
         public int SomaticsCheckMod { get; set; }
         public int Willpower { get; set; }
         public int WillpowerCheckMod { get; set; }
+        public int EgoFlex { get; set; }
 
         //Identity
         public List<Identity> Identities { get; set; }

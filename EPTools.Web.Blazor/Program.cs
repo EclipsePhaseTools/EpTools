@@ -1,5 +1,5 @@
 using EPTools.Web.Blazor;
-using EPTools.Web.Blazor.Services;
+using EPTools.Common.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 
