@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EPTools.Common.Models.DTO
+namespace EPTools.Common.Interfaces
 {
-    public class LifepathNativeTongue
+    public interface IWeightedItem
     {
-    }
-
-    public class LifepathBackgroundPath
-    {
-
+        public int Weight { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿#pragma warning disable CS8618
+using EPTools.Common.Models.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,14 +13,25 @@ namespace EPTools.Common.Models.Ego
     public class Ego
     {
         //General Information
+        [JsonPropertyOrder(0)]
         public string Name { get; set; }
+        [JsonPropertyOrder(1)]
         public string EgoSex { get; set; }
+        [JsonPropertyOrder(2)]
         public string EgoGender { get; set; }
+        [JsonPropertyOrder(4)]
+        public int EgoAge { get; set; }
+        [JsonPropertyOrder(5)]
         public string Background { get; set; }
+        [JsonPropertyOrder(6)]
         public string Career { get; set; }
+        [JsonPropertyOrder(7)]
         public string Interest { get; set; }
+        [JsonPropertyOrder(8)]
         public string Faction { get; set; }
+        [JsonPropertyOrder(9)]
         public string Languages { get; set; }
+        [JsonPropertyOrder(10)]
         public List<string> Motivations { get; set; }
 
         //Aptitudes
@@ -38,27 +50,33 @@ namespace EPTools.Common.Models.Ego
         public int EgoFlex { get; set; }
 
         //Identity
-        public List<Identity> Identities { get; set; }
+        public List<Identity> Identities { get; set; } = new List<Identity>();
 
         //Ego Traits
-        public List<Trait> EgoTraits { get; set; }
+        public List<Trait> EgoTraits { get; set; } = new List<Trait>();
 
         //Skills
-        public List<EgoSkill> Skills { get; set; }
+        public List<EgoSkill> Skills { get; set; } = new List<EgoSkill>();
 
         //PSI
         public string Substrain { get; set; }
         public int InfectionRating { get; set; }
-        public List<string> InfectionEvents { get; set; }
-        public List<Slight> Slights { get; set; }
+        public List<string> InfectionEvents { get; set; } = new List<string>();
+        public List<Slight> Slights { get; set; } = new List<Slight>();
 
         //Morph
-        public List<Morph> Morphs { get; set; }
+        public List<Morph> Morphs { get; set; } = new List<Morph>();
 
         //inventory
-        public List<Gear> Inventory { get; set; }
+        public List<Gear> Inventory { get; set; } = new List<Gear>();
 
         //GearCaches
-        public List<GearCache> Caches { get; set; }
+        public List<GearCache> Caches { get; set; } = new List<GearCache>();
+
+        //lifepath Tracking Variables
+        [JsonIgnore]
+        public List<int> SkipSections { get; set; } = new();
+        [JsonIgnore]
+        public Stack<CharacterGenerationNode> CharacterGenerationNodes { get; set; } = new Stack<CharacterGenerationNode>();
     }
 }

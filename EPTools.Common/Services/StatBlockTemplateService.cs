@@ -8,8 +8,8 @@ namespace EPTools.Common.Services
 {
     public class StatBlockTemplateService
     {
-        private FetchService FetchService { get; set; }
-        public StatBlockTemplateService(FetchService fetchService)
+        private HttpFetchService FetchService { get; set; }
+        public StatBlockTemplateService(HttpFetchService fetchService)
         {
             this.FetchService = fetchService;
         }

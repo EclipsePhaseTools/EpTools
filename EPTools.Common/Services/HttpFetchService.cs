@@ -1,28 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http;
 using System.Net.Http.Json;
-using System.Threading.Tasks;
+using EPTools.Common.Interfaces;
 
 namespace EPTools.Common.Services
 {
-    public class FetchService
+    public class HttpFetchService : IFetchService
     {
         private HttpClient httpClient { get; set; }
 
-        public FetchService(HttpClient httpClient)
+        public HttpFetchService(HttpClient httpClient)
         {
             this.httpClient = httpClient;
         }
 
-        public async Task<T> GetTFromFileAsync<T> (string filename)
+        public async Task<T> GetTFromFileAsync<T>(string filename)
         {
+            filename = filename.ToLower();
+
             return await httpClient.GetFromJsonAsync<T>($"data/{filename}.json");
         }
 
-        public async Task<T> GetTFromEPFileAsync<T> (string filename)
+        public async Task<T> GetTFromEPFileAsync<T>(string filename)
         {
+            filename = filename.ToLower();
             return await httpClient.GetFromJsonAsync<T>($"data/EP-Data/{filename}.json");
         }
     }
