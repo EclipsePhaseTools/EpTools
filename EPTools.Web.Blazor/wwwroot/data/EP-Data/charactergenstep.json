@@ -112,5 +112,62 @@
         }
       ]
     ]
+  },
+  {
+    "Name": "9. Roll Career Path",
+    "Type": "CharacterGenStep",
+    "Description": "9. Roll Career Path",
+    "Value": 1,
+    "Weight": 0,
+    "OptionLists": [
+      [
+        {
+          "Name": "CharacterGenCareer",
+          "Type": "Table",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "10. Roll Interests Path",
+    "Type": "CharacterGenStep",
+    "Description": "10. Roll Interests Path",
+    "Value": 1,
+    "Weight": 0,
+    "OptionLists": [
+      [
+        {
+          "Name": "CharacterGenInterest",
+          "Type": "Table",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "11. Determine Faction Alignment",
+    "Type": "CharacterGenStep",
+    "Description": "11. Determine Faction Alignment",
+    "Value": 1,
+    "Weight": 0,
+    "OptionLists": [
+      [
+        {
+          "Name": "CharacterGenFaction",
+          "Type": "Table",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
   }
 ]

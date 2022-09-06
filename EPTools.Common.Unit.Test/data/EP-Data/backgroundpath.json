@@ -8,7 +8,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Lunar",
+          "Name": "Colonist - Lunar",
           "Type": "BackgroundOption",
           "Description": "You remember the Moon from before it was crowded.",
           "Value": 0,
@@ -167,7 +167,7 @@
           ]
         },
         {
-          "Name": "Martian",
+          "Name": "Colonist - Martian",
           "Type": "BackgroundOption",
           "Description": "You remember the Moon from before it was crowded.",
           "Value": 0,
@@ -318,7 +318,7 @@
           ]
         },
         {
-          "Name": "Orbital",
+          "Name": "Colonist - Orbital",
           "Type": "BackgroundOption",
           "Description": "You overlook the Earth.",
           "Value": 0,
@@ -469,7 +469,7 @@
           ]
         },
         {
-          "Name": "Rimward Colonist",
+          "Name": "Colonist - Rimward Colonist",
           "Type": "BackgroundOption",
           "Description": "You settle Titan, the Main Belt, or an outer-system moon.",
           "Value": 0,
@@ -612,7 +612,7 @@
           ]
         },
         {
-          "Name": "Rural Martian",
+          "Name": "Colonist - Rural Martian",
           "Type": "BackgroundOption",
           "Description": "You homestead the Martian outback.",
           "Value": 0,
@@ -755,7 +755,7 @@
           ]
         },
         {
-          "Name": "Spacer",
+          "Name": "Colonist - Spacer",
           "Type": "BackgroundOption",
           "Description": "You grow up on or work the ships that bring life to the colonies.",
           "Value": 0,
@@ -906,7 +906,7 @@
           ]
         },
         {
-          "Name": "Sunward Colonist",
+          "Name": "Colonist - Sunward Colonist",
           "Type": "BackgroundOption",
           "Description": "You grow up on or work the ships that bring life to the colonies.",
           "Value": 0,
@@ -1060,7 +1060,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Ascendor",
+          "Name": "Enclaver - Ascendor",
           "Type": "BackgroundOption",
           "Description": "Against the odds, you work your way up from the poverty of the underclasses.",
           "Value": 0,
@@ -1203,7 +1203,7 @@
           ]
         },
         {
-          "Name": "Corporate Drifter",
+          "Name": "Enclaver - Corporate Drifter",
           "Type": "BackgroundOption",
           "Description": "You bounce between hypercorp positions.",
           "Value": 0,
@@ -1338,7 +1338,7 @@
           ]
         },
         {
-          "Name": "Corporate Favorite",
+          "Name": "Enclaver - Corporate Favorite",
           "Type": "BackgroundOption",
           "Description": "You enjoy a steady corporate gig.",
           "Value": 0,
@@ -1473,7 +1473,7 @@
           ]
         },
         {
-          "Name": "Inheritor",
+          "Name": "Enclaver - Inheritor",
           "Type": "BackgroundOption",
           "Description": "You benefit from generational wealth.",
           "Value": 0,
@@ -1616,7 +1616,7 @@
           ]
         },
         {
-          "Name": "Opportunist",
+          "Name": "Enclaver - Opportunist",
           "Type": "BackgroundOption",
           "Description": "You claw your way into the enclaves via criminal endeavors.",
           "Value": 0,
@@ -1786,7 +1786,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Nomad",
+          "Name": "Freelancer - Nomad",
           "Type": "BackgroundOption",
           "Description": "You move a lot, chasing work and avoiding climate problems and unrest.",
           "Value": 0,
@@ -1929,7 +1929,7 @@
           ]
         },
         {
-          "Name": "Precarious",
+          "Name": "Freelancer - Precarious",
           "Type": "BackgroundOption",
           "Description": "You get by, but work and simple existence are tenuous.",
           "Value": 0,
@@ -2080,7 +2080,7 @@
           ]
         },
         {
-          "Name": "Self-Reliant",
+          "Name": "Freelancer - Self-Reliant",
           "Type": "BackgroundOption",
           "Description": "You survive by DIY means.",
           "Value": 0,
@@ -2215,7 +2215,7 @@
           ]
         },
         {
-          "Name": "Steady",
+          "Name": "Freelancer - Steady",
           "Type": "BackgroundOption",
           "Description": "You live in relative stability.",
           "Value": 0,
@@ -2358,7 +2358,7 @@
           ]
         },
         {
-          "Name": "Surrounded by Wolves",
+          "Name": "Freelancer - Surrounded by Wolves",
           "Type": "BackgroundOption",
           "Description": "You live and work in an area rife with corruption and lawlessness.",
           "Value": 0,
@@ -2520,7 +2520,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Breakthrough",
+          "Name": "Hyperelite - Breakthrough",
           "Type": "BackgroundOption",
           "Description": "You had the right idea at the right time.",
           "Value": 0,
@@ -2663,7 +2663,7 @@
           ]
         },
         {
-          "Name": "Hypercorp Royalty",
+          "Name": "Hyperelite - Hypercorp Royalty",
           "Type": "BackgroundOption",
           "Description": "You family is among the business elites.",
           "Value": 0,
@@ -2814,7 +2814,7 @@
           ]
         },
         {
-          "Name": "Media Famous",
+          "Name": "Hyperelite - Media Famous",
           "Type": "BackgroundOption",
           "Description": "Your family was often in the spotlight.",
           "Value": 0,
@@ -2957,7 +2957,7 @@
           ]
         },
         {
-          "Name": "Oligarch Dynasty",
+          "Name": "Hyperelite - Oligarch Dynasty",
           "Type": "BackgroundOption",
           "Description": "Your family is rich, wellconnected, and stays out of the spotlight.",
           "Value": 0,
@@ -3108,7 +3108,7 @@
           ]
         },
         {
-          "Name": "Space Entrepreneur",
+          "Name": "Hyperelite - Space Entrepreneur",
           "Type": "BackgroundOption",
           "Description": "Your family made its fortunes off-world.",
           "Value": 0,
@@ -3278,7 +3278,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Drone Operator",
+          "Name": "Indenture - Drone Operator",
           "Type": "BackgroundOption",
           "Description": "You manipulate machines from afar.",
           "Value": 0,
@@ -3421,7 +3421,7 @@
           ]
         },
         {
-          "Name": "Educator",
+          "Name": "Indenture - Educator",
           "Type": "BackgroundOption",
           "Description": "You teach or train others.",
           "Value": 0,
@@ -3564,7 +3564,7 @@
           ]
         },
         {
-          "Name": "Emancipated",
+          "Name": "Indenture - Emancipated",
           "Type": "BackgroundOption",
           "Description": "You work your way to freedom off-world.",
           "Value": 0,
@@ -3707,7 +3707,7 @@
           ]
         },
         {
-          "Name": "Labor Camps",
+          "Name": "Indenture - Labor Camps",
           "Type": "BackgroundOption",
           "Description": "You toil off-world.",
           "Value": 0,
@@ -3874,7 +3874,7 @@
           ]
         },
         {
-          "Name": "Private Staff",
+          "Name": "Indenture - Private Staff",
           "Type": "BackgroundOption",
           "Description": "You serve the hyperelites or corporate leadership.",
           "Value": 0,
@@ -4017,7 +4017,7 @@
           ]
         },
         {
-          "Name": "Vac Worker",
+          "Name": "Indenture - Vac Worker",
           "Type": "BackgroundOption",
           "Description": "You build habitats or ships.",
           "Value": 0,
@@ -4176,7 +4176,7 @@
           ]
         },
         {
-          "Name": "Virtual Worker",
+          "Name": "Indenture - Virtual Worker",
           "Type": "BackgroundOption",
           "Description": "You wrangle data in corporate systems.",
           "Value": 0,
@@ -4322,7 +4322,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Anomaly",
+          "Name": "Infolife - Anomaly",
           "Type": "BackgroundOption",
           "Description": "Your codebase is not based on standard human mind patterns.",
           "Value": 0,
@@ -4465,7 +4465,7 @@
           ]
         },
         {
-          "Name": "Emergent Uplift",
+          "Name": "Infolife - Emergent Uplift",
           "Type": "BackgroundOption",
           "Description": "You are a smart machine that was on the cusp of achieving intelligence when the programmers reshaped you.",
           "Value": 0,
@@ -4608,7 +4608,7 @@
           ]
         },
         {
-          "Name": "Humanities AGI",
+          "Name": "Infolife - Humanities AGI",
           "Type": "BackgroundOption",
           "Description": "You are designed to understand and interact with humans.",
           "Value": 0,
@@ -4759,7 +4759,7 @@
           ]
         },
         {
-          "Name": "Machine AGI",
+          "Name": "Infolife - Machine AGI",
           "Type": "BackgroundOption",
           "Description": "Your mind is optimized for controlling apps and hardware.",
           "Value": 0,
@@ -4902,7 +4902,7 @@
           ]
         },
         {
-          "Name": "Part Human",
+          "Name": "Infolife - Part Human",
           "Type": "BackgroundOption",
           "Description": "Your codeline is merged with the neural patterns of a human fork.",
           "Value": 0,
@@ -5045,7 +5045,7 @@
           ]
         },
         {
-          "Name": "Research AGI",
+          "Name": "Infolife - Research AGI",
           "Type": "BackgroundOption",
           "Description": "You are optimized for investigation, data analysis, and scientific endeavors.",
           "Value": 0,
@@ -5183,7 +5183,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Drifter",
+          "Name": "Isloate - Drifter",
           "Type": "BackgroundOption",
           "Description": "You wander the outskirts of transhuman space.",
           "Value": 0,
@@ -5342,7 +5342,7 @@
           ]
         },
         {
-          "Name": "Religious Sect",
+          "Name": "Isloate - Religious Sect",
           "Type": "BackgroundOption",
           "Description": "Your cult or religious group establishes an off-world haven.",
           "Value": 0,
@@ -5485,7 +5485,7 @@
           ]
         },
         {
-          "Name": "Separatist",
+          "Name": "Isloate - Separatist",
           "Type": "BackgroundOption",
           "Description": "Your people are political dissidents, persecuted minorities, refugees, or others who seek safety on the fringes of the Solar System.",
           "Value": 0,
@@ -5644,7 +5644,7 @@
           ]
         },
         {
-          "Name": "Survivalist",
+          "Name": "Isloate - Survivalist",
           "Type": "BackgroundOption",
           "Description": "Your family fears trouble on Earth and bunkers down off-world.",
           "Value": 0,
@@ -5790,7 +5790,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Alien Mind",
+          "Name": "Lost - Alien Mind",
           "Type": "BackgroundOption",
           "Description": "Your mind is nothing like those around you.",
           "Value": 0,
@@ -5949,7 +5949,7 @@
           ]
         },
         {
-          "Name": "Disturbed Child",
+          "Name": "Lost - Disturbed Child",
           "Type": "BackgroundOption",
           "Description": "You bear permanent mental scars that are often apparent to others.",
           "Value": 0,
@@ -6124,7 +6124,7 @@
           ]
         },
         {
-          "Name": "Long Past Normal",
+          "Name": "Lost - Long Past Normal",
           "Type": "BackgroundOption",
           "Description": "You pass yourself as normal, but there are deep cracks in your foundation",
           "Value": 0,
@@ -6275,7 +6275,7 @@
           ]
         },
         {
-          "Name": "Masked Monster",
+          "Name": "Lost - Masked Monster",
           "Type": "BackgroundOption",
           "Description": "You are a sociopath, but you hide it well.",
           "Value": 0,
@@ -6458,7 +6458,7 @@
           ]
         },
         {
-          "Name": "Twisted Experiment",
+          "Name": "Lost - Twisted Experiment",
           "Type": "BackgroundOption",
           "Description": "Your oddness is palpable.",
           "Value": 0,
@@ -6652,7 +6652,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Criminal",
+          "Name": "Underclass - Criminal",
           "Type": "BackgroundOption",
           "Description": "You make a living by the only means available to you.",
           "Value": 0,
@@ -6811,7 +6811,7 @@
           ]
         },
         {
-          "Name": "Radical",
+          "Name": "Underclass - Radical",
           "Type": "BackgroundOption",
           "Description": "You fight against oppressive systems.",
           "Value": 0,
@@ -6954,7 +6954,7 @@
           ]
         },
         {
-          "Name": "Refugee",
+          "Name": "Underclass - Refugee",
           "Type": "BackgroundOption",
           "Description": "You are forced to flee war or climate catastrophe.",
           "Value": 0,
@@ -7089,7 +7089,7 @@
           ]
         },
         {
-          "Name": "Street Rat",
+          "Name": "Underclass - Street Rat",
           "Type": "BackgroundOption",
           "Description": "You navigate the challenges of your class with deftness.",
           "Value": 0,
@@ -7256,7 +7256,7 @@
           ]
         },
         {
-          "Name": "Survivor",
+          "Name": "Underclass - Survivor",
           "Type": "BackgroundOption",
           "Description": "You do what it takes to get by.",
           "Value": 0,
@@ -7418,7 +7418,7 @@
     "OptionLists": [
       [
         {
-          "Name": "Escapee",
+          "Name": "Uplift - Escapee",
           "Type": "BackgroundOption",
           "Description": "You escape or are liberated from your",
           "Value": 0,
@@ -7633,7 +7633,7 @@
           ]
         },
         {
-          "Name": "Feral",
+          "Name": "Uplift - Feral",
           "Type": "BackgroundOption",
           "Description": "You are not as humanized as other uplifts.",
           "Value": 0,
@@ -7872,7 +7872,7 @@
           ]
         },
         {
-          "Name": "Lab Rat",
+          "Name": "Uplift - Lab Rat",
           "Type": "BackgroundOption",
           "Description": "You are a test subject or corporate slave.",
           "Value": 0,
@@ -8111,7 +8111,7 @@
           ]
         },
         {
-          "Name": "Model Specimen",
+          "Name": "Uplift - Model Specimen",
           "Type": "BackgroundOption",
           "Description": "You are proof of the success of transhumanity\u2019s uplift project.",
           "Value": 0,

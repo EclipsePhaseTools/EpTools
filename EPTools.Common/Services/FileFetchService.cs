@@ -14,33 +14,49 @@ namespace EPTools.Common.Services
 
         }
 
-        public async Task<T> GetTFromFileAsync<T>(string filename)
+        public async Task<T> GetTFromFileAsync<T>(string filename) where T : new()
         {
             filename = filename.ToLower();
 
-            var textstream = new FileStream($"data/{filename}.json", FileMode.Open);
-
-            var item = await JsonSerializer.DeserializeAsync<T>(textstream);
-
-            if (item == null)
+            if (!System.IO.File.Exists($"data/{filename}.json"))
             {
-                throw new NullReferenceException();
+                return new T();
+            }
+
+            var item = new T();
+
+            using (var textstream = new FileStream($"data/{filename}.json", FileMode.Open))
+            {
+                item = await JsonSerializer.DeserializeAsync<T>(textstream);
+
+                if (item == null)
+                {
+                    throw new NullReferenceException();
+                }
             }
 
             return item;
         }
 
-        public async Task<T> GetTFromEPFileAsync<T>(string filename)
+        public async Task<T> GetTFromEPFileAsync<T>(string filename) where T : new()
         {
             filename = filename.ToLower();
 
-            var textstream = new FileStream($"data/EP-Data/{filename}.json", FileMode.Open);
-
-            var item = await JsonSerializer.DeserializeAsync<T>(textstream);
-
-            if (item == null)
+            if (!System.IO.File.Exists($"./data/EP-Data/{filename}.json"))
             {
-                throw new NullReferenceException();
+                return new T();
+            }
+
+            var item = new T();
+
+            using (var textstream = new FileStream($"data/EP-Data/{filename}.json", FileMode.Open))
+            {
+                item = await JsonSerializer.DeserializeAsync<T>(textstream);
+
+                if (item == null)
+                {
+                    throw new NullReferenceException();
+                }
             }
 
             return item;

@@ -276,7 +276,7 @@ namespace EPTools.Common.Services
         {
             if (_lifepathYouthEvents.Count == 0)
             {
-                _lifepathYouthEvents = await _fetchService.GetTFromFileAsync<List<CharacterGenerationNode>>("lifepath_youthevent");
+                _lifepathYouthEvents = await _fetchService.GetTFromEPFileAsync<List<CharacterGenerationNode>>("lifepath_youthevent");
             }
             return _lifepathYouthEvents;
         }

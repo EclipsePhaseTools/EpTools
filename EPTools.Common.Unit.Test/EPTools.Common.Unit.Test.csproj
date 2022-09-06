@@ -17,9 +17,12 @@
     <None Remove="data\EP-Data\backgroundnativetongue.json" />
     <None Remove="data\EP-Data\backgroundpath.json" />
     <None Remove="data\EP-Data\backgrounds.json" />
-    <None Remove="data\EP-Data\backgroundstep.json" />
     <None Remove="data\EP-Data\backgroundyouthevent.json" />
     <None Remove="data\EP-Data\careers.json" />
+    <None Remove="data\EP-Data\charactergencareer.json" />
+    <None Remove="data\EP-Data\charactergenfaction.json" />
+    <None Remove="data\EP-Data\charactergeninterest.json" />
+    <None Remove="data\EP-Data\charactergenstep.json" />
     <None Remove="data\EP-Data\chargen.json" />
     <None Remove="data\EP-Data\factions.json" />
     <None Remove="data\EP-Data\gear_armor.json" />
@@ -94,7 +97,18 @@
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Include="data\EP-Data\backgroundstep.json">
+    <Content Include="data\EP-Data\charactergencareer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\EP-Data\charactergenfaction.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="data\EP-Data\charactergeninterest.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\EP-Data\charactergenstep.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>

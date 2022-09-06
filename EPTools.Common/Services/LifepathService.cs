@@ -2,6 +2,7 @@
 using EPTools.Common.Models.DTO;
 using EPTools.Common.Models.Ego;
 using EPTools.Common.Utilities;
+using Microsoft.VisualBasic.FileIO;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
+using System.Xml.Linq;
 
 namespace EPTools.Common.Services
 {
@@ -29,7 +31,12 @@ namespace EPTools.Common.Services
 
         public async Task<Ego> GenerateEgo()
         {
-            var CharGenSteps = (await _epDataservice.GetCharacterGenTable("backgroundstep"));
+            NewEgo = new Ego
+            {
+                Identities = new List<Identity> { new Identity() }
+            };
+
+            var CharGenSteps = (await _epDataservice.GetCharacterGenTable("charactergenstep"));
 
             CharGenSteps.Reverse();
 
@@ -38,7 +45,7 @@ namespace EPTools.Common.Services
             while (NewEgo.CharacterGenerationNodes.Any())
             {
                 var node = NewEgo.CharacterGenerationNodes.Pop();
-                Console.WriteLine($"{node.Name} {node.Description} {node.Value}");
+                //Console.WriteLine($"{node.Name} {node.Description} {node.Value}");
                 await ApplyBackgroundOption(NewEgo, node);
             }
 
@@ -47,8 +54,29 @@ namespace EPTools.Common.Services
 
         private async Task<Ego> ApplyBackgroundOption(Ego ego, CharacterGenerationNode option)
         {
+            ego.CharacterGenerationOutput.Add($"{option.Name} {option.Description}".Trim());
             switch (option.Type)
             {
+
+                case "Morph":
+                    var selectedMorph = (await _epDataservice.GetMorphs()).FirstOrDefault(x => x.Name == option.Name);
+                    if (selectedMorph != null)
+                    {
+                        ego.Morphs.Add(new Models.Ego.Morph
+                        {
+                            Name = option.Name,
+                            ActiveMorph = false,
+                            Insight = selectedMorph.pools.insight,
+                            Moxie = selectedMorph.pools.moxie,
+                            Vigor = selectedMorph.pools.vigor,
+                            MorphFlex = selectedMorph.pools.flex,
+                            MorphType = selectedMorph.type,
+                            MorphSex = "",
+                            Traits = selectedMorph.morph_traits.Select(x => new Models.Ego.Trait { Name = x.name, Level = x.level }).ToList(),
+                            Wares = selectedMorph.ware.Select(x=> new Models.Ego.Ware { Name = x}).ToList()
+                        });
+                    }
+                    break;
                 case "Skill":
                     ego.Skills.Add(new EgoSkill { Name = option.Name.Split("-")[0], Rank = option.Value, Specializaion = option.Name.Split("-").Length > 1 ? option.Name.Split("-")[1] : "" });
                     break;
@@ -99,6 +127,21 @@ namespace EPTools.Common.Services
                         ego.Slights.Add(new Models.Ego.Slight { Name = "Random or chosen" });
                     }
                     break;
+                case "Faction":
+                    ego.Faction = option.Name;
+                    break;
+                case "Interest":
+                    ego.Interest = option.Name;
+                    goto default;
+                case "Career":
+                    ego.Career = option.Name;
+                    goto default;
+                case "Age":
+                    ego.EgoAge = option.Value;
+                    break;
+                case "Motivation":
+                    ego.Motivations.Add(option.Name);
+                    break;
                 case "Skip":
                     ego.SkipSections.Add(option.Value);
                     break;
@@ -108,14 +151,11 @@ namespace EPTools.Common.Services
                         break;
                     }
                     goto default;
-                case "BackgroundPath":
+                case "BackgroundOption":
                     ego.Background = option.Name;
                     goto default;
-                case "BackgroundOption":
-                    ego.Background += " - " + option.Name;
-                    goto default;
                 case "Table":
-                    var nodes = await ProcessTableRequest(option.Name, option.Value);
+                    var nodes = await ProcessTableRequest(option.Name, option.Value, ego);
                     nodes.ForEach(x=>ego.CharacterGenerationNodes.Push(x));
                     break;
                 default:
@@ -139,11 +179,14 @@ namespace EPTools.Common.Services
             return ego;
         }
 
-        private async Task<List<CharacterGenerationNode>> ProcessTableRequest(string tablename, int tablemodifier)
+        private async Task<List<CharacterGenerationNode>> ProcessTableRequest(string tablename, int tablemodifier, Ego ego)
         {
             List<CharacterGenerationNode> options = new();
 
             var table = (await _epDataservice.GetCharacterGenTable(tablename)).GetWeightedItem(tablemodifier);
+
+            //Console.WriteLine($"{table.Name} {table.Description}");
+            ego.CharacterGenerationOutput.Add($"{table.Name} {table.Description}".Trim());
 
             foreach (var nodeList in table.OptionLists)
             {
