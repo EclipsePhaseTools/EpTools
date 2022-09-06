@@ -1,0 +1,110 @@
+[
+  {
+    "Name": "Arabic",
+    "Weight": 6
+  },
+  {
+    "Name": "Bengali",
+    "Weight": 3
+  },
+  {
+    "Name": "Cantonese/Yue",
+    "Weight": 5
+  },
+  {
+    "Name": "Dutch",
+    "Weight": 1
+  },
+  {
+    "Name": "English",
+    "Weight": 9
+  },
+  {
+    "Name": "Farsi/Persian",
+    "Weight": 3
+  },
+  {
+    "Name": "French",
+    "Weight": 4
+  },
+  {
+    "Name": "German",
+    "Weight": 4
+  },
+  {
+    "Name": "Hindi",
+    "Weight": 6
+  },
+  {
+    "Name": "Italian",
+    "Weight": 1
+  },
+  {
+    "Name": "Japanese",
+    "Weight": 5
+  },
+  {
+    "Name": "Javanese",
+    "Weight": 4
+  },
+  {
+    "Name": "Korean",
+    "Weight": 2
+  },
+  {
+    "Name": "Mandarin",
+    "Weight": 9
+  },
+  {
+    "Name": "Polish",
+    "Weight": 1
+  },
+  {
+    "Name": "Portuguese",
+    "Weight": 5
+  },
+  {
+    "Name": "Punjabi",
+    "Weight": 3
+  },
+  {
+    "Name": "Russian",
+    "Weight": 5
+  },
+  {
+    "Name": "Skandinaviska",
+    "Weight": 2
+  },
+  {
+    "Name": "Spanish",
+    "Weight": 6
+  },
+  {
+    "Name": "Swedish",
+    "Weight": 1
+  },
+  {
+    "Name": "Tamil",
+    "Weight": 2
+  },
+  {
+    "Name": "Turkish",
+    "Weight": 2
+  },
+  {
+    "Name": "Urdu",
+    "Weight": 3
+  },
+  {
+    "Name": "Vietnamese",
+    "Weight": 2
+  },
+  {
+    "Name": "Wu",
+    "Weight": 4
+  },
+  {
+    "Name": "Other",
+    "Weight": 2
+  }
+]
