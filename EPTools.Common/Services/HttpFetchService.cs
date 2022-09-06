@@ -19,13 +19,13 @@ namespace EPTools.Common.Services
         {
             filename = filename.ToLower();
 
-            return await httpClient.GetFromJsonAsync<T>($"data/{filename}.json");
+            return await httpClient.GetFromJsonAsync<T>($"data/{filename}.json") ?? new T();
         }
 
         public async Task<T> GetTFromEPFileAsync<T>(string filename) where T : new()
         {
             filename = filename.ToLower();
-            return await httpClient.GetFromJsonAsync<T>($"data/EP-Data/{filename}.json");
+            return await httpClient.GetFromJsonAsync<T>($"data/EP-Data/{filename}.json") ?? new T();
         }
     }
 }
