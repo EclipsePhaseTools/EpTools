@@ -8,7 +8,7 @@
   "resources": {
     "assembly": {
       "CoreHtmlToImage.dll": "sha256-bFCKoUPHu28BwhsVt+hi6XU2WJl2aQI14869xxTOghg=",
-      "EPTools.Common.dll": "sha256-FQznzxAKGsoNZ6TIdQZaJ+M+mW5ZauakK03FFtwzHc4=",
+      "EPTools.Common.dll": "sha256-36NUfyzsx5mPuLEPzHuz8s2p8bdmTQrthmo814X9OpU=",
       "EPTools.Web.Blazor.dll": "sha256-OVPaBNwRfKp\/TmhA6yM8E\/NAxbly2gBZccjkdokpkIY=",
       "Microsoft.AspNetCore.Components.dll": "sha256-NpSnzpEnJtWbi9Y3hpQqnppQ0w3zsUPsrrQ379gMOAI=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-0aR4Y1cN4iPqfEadyUaDtu2btR5SjzMAE0C7cPfuo1w=",
