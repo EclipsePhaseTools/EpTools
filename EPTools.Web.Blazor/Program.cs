@@ -13,4 +13,6 @@ builder.Services.AddScoped<IFetchService, HttpFetchService>();
 builder.Services.AddScoped<StatBlockTemplateService>();
 builder.Services.AddScoped<EPDataService>();
 builder.Services.AddScoped<DiscordWebhookService>();
+builder.Services.AddScoped<LifepathService>();
+
 await builder.Build().RunAsync();

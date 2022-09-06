@@ -270,4 +270,12 @@
 
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\RandomCharacter.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\RandomCharacter.razor" />
+  </ItemGroup>
+
 </Project>

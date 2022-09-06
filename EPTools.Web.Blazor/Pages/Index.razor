@@ -3,12 +3,7 @@
 @inject EPTools.Common.Services.EPDataService epd
 
 <button @onclick="@(async () => await Post())">Post</button>
-<ul>
-    @foreach (var item in list)
-    {
-        <li>@item.Name @item.Weight</li>
-    }
-</ul>
+
 
 
 @code{
@@ -16,11 +11,6 @@
 
     protected override async Task OnInitializedAsync()
     {
-        foreach (var lifepath in await epd.GetLifepathNativeTonguesAsync())
-        {
-            list.Add(lifepath);
-            this.StateHasChanged();
-        }
     }
 
     private async Task Post()

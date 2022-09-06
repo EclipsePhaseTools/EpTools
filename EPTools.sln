@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPTools.Common", "EPTools.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPTools.Web.Blazor", "EPTools.Web.Blazor\EPTools.Web.Blazor.csproj", "{4AA4D016-36F3-4584-B4A0-1C14D29A726B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPTools.Common.Unit.Test", "EPTools.Common.Unit.Test\EPTools.Common.Unit.Test.csproj", "{077957BC-A5C6-4D14-9371-B909BAE4E7B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPTools.Common.Unit.Test", "EPTools.Common.Unit.Test\EPTools.Common.Unit.Test.csproj", "{077957BC-A5C6-4D14-9371-B909BAE4E7B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

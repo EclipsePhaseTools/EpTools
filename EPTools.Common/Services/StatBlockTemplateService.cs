@@ -1,4 +1,5 @@
-﻿using EPTools.Common.Models.DTO;
+﻿using EPTools.Common.Interfaces;
+using EPTools.Common.Models.DTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,8 +9,8 @@ namespace EPTools.Common.Services
 {
     public class StatBlockTemplateService
     {
-        private HttpFetchService FetchService { get; set; }
-        public StatBlockTemplateService(HttpFetchService fetchService)
+        private IFetchService FetchService { get; set; }
+        public StatBlockTemplateService(IFetchService fetchService)
         {
             this.FetchService = fetchService;
         }
