@@ -1,0 +1,407 @@
+[
+  {
+    "Name": "Anarchist",
+    "Type": "CharacterGenFaction",
+    "Description": "You believe power is corrupt and favor voluntary, non-hierarchical organizations based on direct democracy.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Anarchist",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Anarchist",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Argonaut",
+    "Type": "CharacterGenFaction",
+    "Description": "You seek technoprogressive solutions to transhumanity\u2019s injustices and inequalities.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Argonaut",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Argonaut",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Barsoomian",
+    "Type": "CharacterGenFaction",
+    "Description": "You wish to see Mars liberated from hypercorp control.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Barsoomian",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Barsoomian",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Brinker",
+    "Type": "CharacterGenFaction",
+    "Description": "You belong to a cult, commune, or other group that seeks isolation from the rest of transhumanity.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Brinker",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Brinker",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Criminal",
+    "Type": "CharacterGenFaction",
+    "Description": "You are associated with the underworld, either part of a large cartel, smaller gang, or as an independent operator.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Criminal",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Criminal",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Extropian",
+    "Type": "CharacterGenFaction",
+    "Description": "You believe in unrestricted free markets and that taking proactive risks with technology is better than playing it safe.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Extropian",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Extropian",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Hypercorp",
+    "Type": "CharacterGenFaction",
+    "Description": "You support hypercapitalist expansion and competitive-economics-driven social order. You accept that certain liberties must be restricted for security and freedom.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Hypercorp",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Hypercorp",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Lunar/Orbital",
+    "Type": "CharacterGenFaction",
+    "Description": "You support the conservative economics, Earth-tied nationalism, and traditionalism of the Lunar-Lagrange Alliance.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Lunar/Orbital",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Lunar/Orbital",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Mercurial",
+    "Type": "CharacterGenFaction",
+    "Description": "You oppose the assimilation and oppression of AGIs and uplifts, supporting self-determination for your kind.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Mercurial",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Mercurial",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Reclaimer",
+    "Type": "CharacterGenFaction",
+    "Description": "You believe transhumanity should be focused on reclaiming, terraforming, and repopulating Earth.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Reclaimer",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Reclaimer",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Scum",
+    "Type": "CharacterGenFaction",
+    "Description": "You push the boundaries of the experimental, fully testing what it means to be transhuman.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Scum",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Scum",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Socialite",
+    "Type": "CharacterGenFaction",
+    "Description": "You are a part of the glitterati, defining and defined by inner-system media culture.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Socialite",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Socialite",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Titanian",
+    "Type": "CharacterGenFaction",
+    "Description": "You are a technosocialist, believing that science and technology can provide for the well-being of all.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Titanian",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Titanian",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Venusian",
+    "Type": "CharacterGenFaction",
+    "Description": "You adhere to the Morningstar Constellation\u2019s vision for a more socialized, friendlier hypercapitalism.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Venusian",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Venusian",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  },
+  {
+    "Name": "Regional",
+    "Type": "CharacterGenFaction",
+    "Description": "You are a Solarian, Sifter, Belter, Europan, Ringer, or Skimmer invested in the culture, prosperity, and security of your area of the Solar System.",
+    "Value": 0,
+    "Weight": 1,
+    "OptionLists": [
+      [
+        {
+          "Name": "Regional (Choose Region)",
+          "Type": "Faction",
+          "Description": null,
+          "Value": 0,
+          "Weight": 0,
+          "OptionLists": []
+        },
+        {
+          "Name": "Faction: Regional  (Choose Region)",
+          "Type": "Skill",
+          "Description": null,
+          "Value": 30,
+          "Weight": 0,
+          "OptionLists": []
+        }
+      ]
+    ]
+  }
+]

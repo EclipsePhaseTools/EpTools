@@ -1,0 +1,146 @@
+[
+  {
+    "Weight": 2,
+    "Result": "Reduce one aptitude by 5.",
+    "Options": [
+      {
+        "Type": "Aptitude",
+        "Name": "Cog",
+        "Value": 1,
+        "Weight": -5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Int",
+        "Value": 1,
+        "Weight": -5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Ref",
+        "Value": 1,
+        "Weight": -5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Sav",
+        "Value": 1,
+        "Weight": -5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Som",
+        "Value": 1,
+        "Weight": -5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Wil",
+        "Value": 1,
+        "Weight": -5
+      }
+    ]
+  },
+  {
+    "Weight": 3,
+    "Result": "Increase one aptitude by 5.",
+    "Options": [
+      {
+        "Type": "Aptitude",
+        "Name": "Cog",
+        "Value": 1,
+        "Weight": 5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Int",
+        "Value": 1,
+        "Weight": 5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Ref",
+        "Value": 1,
+        "Weight": 5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Sav",
+        "Value": 1,
+        "Weight": 5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Som",
+        "Value": 1,
+        "Weight": 5
+      },
+      {
+        "Type": "Aptitude",
+        "Name": "Wil",
+        "Value": 1,
+        "Weight": 5
+      }
+    ]
+  },
+  {
+    "Weight": 1,
+    "Result": "Gain the Mental Disorder (Depression) trait (p. 225, EP2).",
+    "Options": [
+      {
+        "Type": "Trait",
+        "Name": "Mental Disorder-Depression",
+        "Value": 1,
+        "Weight": 0
+      }
+    ]
+  },
+  {
+    "Weight": 1,
+    "Result": "Gain the Enhanced Behavior (Bored, Level 2) trait(p. 78, EP2)",
+    "Options": [
+      {
+        "Type": "Trait",
+        "Name": "Enhanced Behavior-Bored",
+        "Value": 2,
+        "Weight": 0
+      }
+    ]
+  },
+  {
+    "Weight": 1,
+    "Result": "Gain the Restricted Behavior (Caring, Level 2) trait(p. 80, EP2)",
+    "Options": [
+      {
+        "Type": "Trait",
+        "Name": "Restricted Behavior-Caring",
+        "Value": 2,
+        "Weight": 0
+      }
+    ]
+  },
+  {
+    "Weight": 1,
+    "Result": "Reduce your motivations by one.",
+    "Options": [
+      {
+        "Type": "Motivation",
+        "Name": "Reduce your motivations by one.",
+        "Value": 0,
+        "Weight": 0
+      }
+    ]
+  },
+  {
+    "Weight": 1,
+    "Result": "No effect",
+    "Options": [
+      {
+        "Type": "",
+        "Name": "No effec",
+        "Value": 0,
+        "Weight": 0
+      }
+    ]
+  }
+]
