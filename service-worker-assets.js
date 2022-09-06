@@ -445,8 +445,8 @@
       "url": "data\/EP-Data\/weapons_ranged.json"
     },
     {
-      "hash": "sha256-KKRx65sXgWnY5+7P9Pi4p1SRjjGV5hHvprWJFMn8GeQ=",
-      "url": "data\/StatBlockTemplates.json"
+      "hash": "sha256-4Wnr8db64P9eT3B9Fg\/g9oWYZgJtfvfIrcN48VKPp8o=",
+      "url": "data\/statblocktemplates.json"
     },
     {
       "hash": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
@@ -469,5 +469,5 @@
       "url": "manifest.json"
     }
   ],
-  "version": "+MZ2jYz4"
+  "version": "eTFt3\/zn"
 };
