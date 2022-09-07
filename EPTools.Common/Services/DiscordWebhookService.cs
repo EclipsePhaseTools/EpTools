@@ -18,7 +18,7 @@ namespace EPTools.Common.Services
 
         public async Task SendWebhook()
         {
-            var url = "https://discord.com/api/webhooks/771012739253534750/ewqVwBcfEFCRRezfP224UybSdFLnirh8B6_zPbB2dQwK6KGTKDhQDWa2XxjRR7wLrQKT";
+            var url = "";
 
             var payload = new StringContent(
                             @"{""content"": ""TEST"", 
