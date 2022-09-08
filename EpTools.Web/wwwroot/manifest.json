@@ -1,6 +1,6 @@
 {
-  "name": "EpTools.Web",
-  "short_name": "EpTools.Web",
+  "name": "EPTools.Web",
+  "short_name": "EPTools.Web",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
