@@ -1,8 +1,9 @@
-using EPTools.Web.Blazor;
+using EpTools.Web;
+using EPTools.Common.Interfaces;
 using EPTools.Common.Services;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using EPTools.Common.Interfaces;
+using MudBlazor.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
 builder.RootComponents.Add<App>("#app");
@@ -14,5 +15,6 @@ builder.Services.AddScoped<StatBlockTemplateService>();
 builder.Services.AddScoped<EPDataService>();
 builder.Services.AddScoped<DiscordWebhookService>();
 builder.Services.AddScoped<LifepathService>();
+builder.Services.AddMudServices();
 
 await builder.Build().RunAsync();

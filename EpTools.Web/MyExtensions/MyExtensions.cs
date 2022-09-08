@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EPTools.Web.Blazor.MyExtensions
+namespace EPTools.Web.MyExtensions
 {
     public static class MyExtensions
     {
