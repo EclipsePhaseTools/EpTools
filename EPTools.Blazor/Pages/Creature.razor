@@ -1,0 +1,115 @@
+﻿@page "/creature"
+@using EPTools.Blazor.MyExtensions
+@inject StatBlockTemplateService TemplatesService
+<h3>Creature Template</h3>
+
+<div>
+    @foreach (var item in Templates)
+    {
+        <button @onclick="() => ResetTemplate(item.TemplateName)">@(item.TemplateName)</button>
+    }
+</div>
+
+
+<textarea rows="10" cols="54" id="text" @bind-value="MyText" @bind-value:event="oninput"></textarea>
+
+<div>
+    <div class="creature name">@(GetCreatureName(MyText ?? ""))</div>
+    <div class='entity creature'>
+        @if (MyText == null)
+        {
+            <span>Loading</span>
+        }
+        else
+        {
+            @((MarkupString)ParseInput(MyText))
+        }
+
+    </div>
+</div>
+
+@code {
+
+    private string? MyText
+    {
+        get; set;
+    }
+
+    private List<Common.Models.DTO.StatBlockTemplate> Templates { get; set; } = new();
+
+    private void ResetTemplate(string name)
+    {
+        MyText = Templates.First(x => x.TemplateName == name).Template;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Templates = await TemplatesService.GetStatBlockTemplates();
+
+        Templates = Templates.Where(x => x.TemplateType == "Creature").ToList();
+
+        MyText = Templates.First().Template;
+    }
+
+    private string ParseInput(string? str)
+    {
+        var sb = new System.Text.StringBuilder();
+        var splits = str?.Split(Environment.NewLine);
+
+        foreach (var item in splits!)
+        {
+            if (item.ToLower().StartsWith("name:"))
+            {
+                continue;
+            }
+            if (item.StartsWith("--"))
+            {
+                sb.Append("<div class='divider'><div class='hex'><span>&#x2B22;</span></div><div class='hex2'><span>&#x2B22;</span></div></div>");
+            }
+            else
+            {
+                sb.Append("<div class='section'>");
+
+                var newString = item;
+
+                var superScript = new System.Text.RegularExpressions.Regex(@"(\^\w{0,3})");
+                var firstBold = new System.Text.RegularExpressions.Regex(@"(^.{0,20}?:)");
+                var generalBold = new System.Text.RegularExpressions.Regex(@"(\w{0,20}?:)");
+
+                newString = superScript.Replace(newString, "<sup>$1</sup>");
+                newString = newString.Replace("^", "");
+                newString = firstBold.Replace(newString, "<b>$1</b>");
+
+                if (generalBold.Matches(newString).Count > 1)
+                {
+                    foreach (var match in generalBold.Matches(newString).Skip(1).Reverse())
+                    {
+                        newString = newString.ReplaceSubstring(match.Index, match.Length, $"<b>{match.Value}</b>");
+                    }
+                }
+                sb.AppendLine(newString);
+                sb.Append("</div>");
+            }
+
+
+        }
+
+        return sb.ToString();
+    }
+
+    private string GetCreatureName(string str)
+    {
+        var splits = str.Split(Environment.NewLine);
+
+        foreach (var item in splits)
+        {
+            if (item.ToLower().StartsWith("name:"))
+            {
+                return item.Split(':').Last().Trim();
+            }
+
+        }
+
+        return "";
+    }
+}
