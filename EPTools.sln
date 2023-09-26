@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPTools.Common.Unit.Test", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EPTools.Web", "EpTools.Web\EPTools.Web.csproj", "{F04AED02-966D-4D1E-9264-8CEB05B8084D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EPTools.Blazor", "EPTools.Blazor\EPTools.Blazor.csproj", "{BA19CDE8-1601-4D3B-8F9C-CB8040C2150C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F04AED02-966D-4D1E-9264-8CEB05B8084D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F04AED02-966D-4D1E-9264-8CEB05B8084D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F04AED02-966D-4D1E-9264-8CEB05B8084D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA19CDE8-1601-4D3B-8F9C-CB8040C2150C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA19CDE8-1601-4D3B-8F9C-CB8040C2150C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA19CDE8-1601-4D3B-8F9C-CB8040C2150C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA19CDE8-1601-4D3B-8F9C-CB8040C2150C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
