@@ -11,6 +11,6 @@ namespace EPTools.Common.Models.DTO
     {
         public string TemplateName { get; set; }
         public string TemplateType { get; set; }
-        public string Template { get; set; }
+        public string? Template { get; set; }
     }
 }
